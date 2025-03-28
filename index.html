@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FT Enterprises - Gypsum Steel Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-placeholder">
+                    <!-- Replace with your actual logo -->
+                    <img src="logo.png" alt="FT Enterprises Logo" class="logo">
+                </div>
+                <div class="company-info">
+                    <h1>FT ENTERPRISES</h1>
+                    <p class="tagline">MFRS. FG ROCK BRIGHT® GYPSUM STEEL ULTRA</p>
+                    <p class="tagline">No Compromise In Quality</p>
+                    <p class="address">
+                        <i class="fas fa-map-marker-alt"></i> 24-, Rajiv Gandhi Karmika Nagar, 
+                        Jawahar Nagar, Shameerpet, Medchal
+                    </p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <a href="tel:9989384625" class="contact-btn">
+                    <i class="fas fa-phone"></i> Call: 9989384625
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>High Quality Gypsum Steel Products</h2>
+                <p>Manufacturers of FG ROCK BRIGHT® and FG BRIGHTNESS® Gypsum Steel Ultra</p>
+                <a href="#products" class="btn">View Products</a>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <h2>OUR PRODUCTS PRICE LIST</h2>
+            
+            <div class="search-filter">
+                <input type="text" id="searchInput" placeholder="Search products...">
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="PATTI">PATTI</option>
+                    <option value="BOTTOM">BOTTOM</option>
+                    <option value="PERIMETER">PERIMETER</option>
+                    <option value="L.ANGLE">L.ANGLE</option>
+                    <option value="STUD">STUD</option>
+                    <option value="FLOOR">FLOOR</option>
+                </select>
+                <button id="resetFilters" class="btn-small">Reset</button>
+            </div>
+            
+            <div class="table-container">
+                <table id="productsTable">
+                    <thead>
+                        <tr>
+                            <th>S.NO</th>
+                            <th>PARTICULARS</th>
+                            <th>GAUGE(MM)</th>
+                            <th>WIDTH(MM)</th>
+                            <th>PRICE</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productsTableBody">
+                        <!-- Products will be inserted here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="download-section">
+                <button id="downloadPdf" class="btn">
+                    <i class="fas fa-file-pdf"></i> Download Full Price List (PDF)
+                </button>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About FT Enterprises</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>FT Enterprises is a leading manufacturer of high-quality gypsum steel products under the brands FG ROCK BRIGHT® and FG BRIGHTNESS® Gypsum Steel Ultra.</p>
+                    <p>We pride ourselves on maintaining the highest standards of quality without compromise, ensuring our customers receive only the best products for their construction needs.</p>
+                    <p>With years of experience in the industry, we've built a reputation for reliability, durability, and excellence in our product range.</p>
+                </div>
+                <div class="about-image">
+                    <img src="logo2.jpg" alt="Construction materials">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-phone"></i> <a href="tel:9989384625">9989384625</a></p>
+                    <p><i class="fas fa-envelope"></i> info@ftenterprises.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 24-, Rajiv Gandhi Karmika Nagar, Jawahar Nagar, Shameerpet, Medchal</p>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Request a Quote</h3>
+                    <form id="quoteForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Requirements"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="FT Enterprises Logo" class="logo">
+                    </div>
+                    <p>Manufacturers of high-quality gypsum steel products with no compromise in quality.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-phone"></i> 9989384625</p>
+                    <p><i class="fas fa-envelope"></i> info@ftenterprises.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 24-, Rajiv Gandhi Karmika Nagar, Jawahar Nagar, Shameerpet, Medchal</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 FT ENTERPRISES. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="notification" class="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
